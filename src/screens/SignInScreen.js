@@ -1,6 +1,6 @@
 import React,{useContext, useState} from 'react';
 import {View,Text,TouchableOpacity,TextInput}from 'react-native';
-import { Ionicons,Entypo } from '@expo/vector-icons';
+import { Entypo } from '@expo/vector-icons';
 import {stylesLogin} from './Components/stylesLogin';
 import {Context as AuthContext} from '../Context/AuthContext';
 import NavLink from './Components/NavLink';

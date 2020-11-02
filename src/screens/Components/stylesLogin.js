@@ -1,5 +1,8 @@
 
 import {StyleSheet} from 'react-native';
+import { 
+    DMSans_400Regular,
+  } from '@expo-google-fonts/dm-sans';
 const stylesLogin = StyleSheet.create({
     container:{
         marginHorizontal:40,
