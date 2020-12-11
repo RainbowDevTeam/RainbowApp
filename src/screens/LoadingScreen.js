@@ -1,9 +1,11 @@
-import React,{useEffect,useContext} from 'react';
-import{Context as AuthContext} from '../Context/AuthContext';
+import React,{useContext,useEffect,useState} from 'react';
+import Font from 'expo-font';
+import AuthContext from '../Context/AuthContext';
 
 const LoadingScreen = ()=>{
-const {tryLocalSignin} = useContext(AuthContext);
-useEffect(()=>{tryLocalSignin()},[]);
-return null;
+useEffect(()=>{
+        Font.loadAsync({'dm-sans': require("../fonts/DMSans-Regular.ttf"),});
+    },[]);
+        return null;
 };
 export default LoadingScreen;

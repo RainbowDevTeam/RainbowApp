@@ -3,23 +3,11 @@ import {View,StyleSheet,TouchableOpacity,Text,Image}from 'react-native';
 import MapOptionCard from '../Components/mapOptionCard';
 import Dialog, { DialogContent } from 'react-native-popup-dialog';
 import Checkbox from '../Components/Checkbox';
-import {AppLoading} from 'expo';
-import * as Font from 'expo-font';
-import {NavigationEvents} from 'react-navigation';
+
 const MapMain=({navigation})=>{
     const [dialogVisible,setDialogVisible] = useState(false);
     const [toggleCheckBox, setToggleCheckBox] = useState(false)
-    const [fontsLoaded,setFontsLoaded]=useState(false);
-    const fetchFonts=()=>Font.loadAsync({'dm-sans': require("../../fonts/DMSans-Regular.ttf"),});
     
-      if(!fontsLoaded){
-        return(
-          <AppLoading
-          startAsync={fetchFonts}
-          onFinish={()=>{setFontsLoaded(true)}}
-          onError={console.warn}/>
-        )
-      }
     return(
         <View>
         <View style={styles.topBox}>
